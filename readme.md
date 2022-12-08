@@ -1,7 +1,7 @@
 # A Simple Blog Example for Harp
 
 * This is site is compiled using [harp](http://harpjs.com)
-* (prism)(https://prismjs.com/) for syntax highlighting
+* [prism](https://prismjs.com/) for syntax highlighting
 * rss feed
 * prev/next post basic pagination
 * index shows 3 newest posts
@@ -16,4 +16,4 @@ run `harp _harp _build` to compile for deployment
 
 ## Demo
 
-(View repo exmaple)[https://handerson.github.io/harp-blog-example/] compiled and deployed to github pages
+[View repo example](https://handerson.github.io/harp-blog-example/) compiled and deployed to github page
