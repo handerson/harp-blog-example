@@ -10,3 +10,6 @@
 ## Get started
 
 run `harp _harp` to start local server
+
+
+run `harp _harp _build` to compile for deployment
