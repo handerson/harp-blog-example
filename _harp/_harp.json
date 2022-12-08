@@ -1,0 +1,7 @@
+{
+    "globals": {
+      "title": "Example Blog",
+      "description": "An example blog",
+      "url": "http://example.com"
+    }
+  }

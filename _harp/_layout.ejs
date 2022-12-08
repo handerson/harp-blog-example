@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+    <%- partial("_partials/common_head") %>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <%- partial("_partials/header") %>
+    </div>
+  </header>
+  <% var path = current.path; %>
+  <% path.shift(); %>
+  <% path = path.join("/"); %>
+  <div class="container main">
+    <% if(public.posts._data[path]) { %>
+      <%- partial("/_post_layout", {"path": path}) %>
+    <% } else { %>
+        <%- yield %>
+    <% } %>
+  </div>
+
+	<footer>
+      <div class="container">
+        <%- partial("_partials/footer") %>
+      </div>
+	</footer>
+  </body>
+</html>
