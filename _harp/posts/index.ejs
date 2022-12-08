@@ -1,5 +1,5 @@
 <% for(var slug in public.posts._data){ %>
     <h3>
-        <a href="/posts/<%= slug %>" rel="bookmark" title="<%= public.posts._data[slug].title %>"><%= public.posts._data[slug].title %></a>
+        <a href="<%-root%>posts/<%= slug %>" rel="bookmark" title="<%= public.posts._data[slug].title %>"><%= public.posts._data[slug].title %></a>
     </h3>
 <% }; %>

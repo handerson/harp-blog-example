@@ -4,13 +4,13 @@
     <% var currentIndex = posts.indexOf(path); %>
     <% if(posts[0] != path) { %>
         <% currentIndex = posts.indexOf(path); %>
-        <a href="/posts/<%=posts[currentIndex-1]%>">Prev</a>
+        <a href="<%-root%>posts/<%=posts[currentIndex-1]%>">Prev</a>
     <% } else { %>
         <span class="disabled_pagination">Prev</span>
     <% } %>
 	
 	<% if(posts[posts.length-1] != path){ %>
-        <a href="/posts/<%=posts[currentIndex+1]%>">Next</a>
+        <a href="<%-root%>posts/<%=posts[currentIndex+1]%>">Next</a>
 	<% } else { %>
         <span class="disabled_pagination">Next</span>
 	<% } %>

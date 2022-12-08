@@ -16,4 +16,4 @@ run `harp _harp _build` to compile for deployment
 
 ## Demo
 
-[View repo example](https://handerson.github.io/harp-blog-example/) compiled and deployed to github page
+[View repo example](https://handerson.github.io/harp-blog-example/) compiled and deployed to github pages

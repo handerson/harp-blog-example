@@ -5,7 +5,7 @@
 
 <% for(var slug in public.posts._data){ %>
   <article>
-  <h3><a href="/posts/<%= slug %>" rel="bookmark" title="<%= public.posts._data[slug].title %>"><%= public.posts._data[slug].title %></a></h3>
+  <h3><a href="<%-root%>posts/<%= slug %>" rel="bookmark" title="<%= public.posts._data[slug].title %>"><%= public.posts._data[slug].title %></a></h3>
   <%- partial("/posts/" + slug) %>
   <% count++ %>
   </article>
@@ -22,7 +22,7 @@
 	<% if(count >= posts.length){ %>
 	<span class="disabled_pagination">Next</span>
 	<% } else { %>
-	<a href="/posts/<%=posts[count]%>">Next</a>
+	<a href="<%-root%>posts/<%=posts[count]%>">Next</a>
 	<% } %>
 </div>
 <hr>
