@@ -13,3 +13,7 @@ run `harp _harp` to start local server
 
 
 run `harp _harp _build` to compile for deployment
+
+## Demo
+
+(View repo exmaple)[https://handerson.github.io/harp-blog-example/] compiled and deployed to github pages
