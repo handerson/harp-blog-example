@@ -12,8 +12,19 @@
 run `harp _harp` to start local server
 
 
-run `harp _harp _build` to compile for deployment
+run `harp _harp _build` to build
 
 ## Demo
 
 [View repo example](https://handerson.github.io/harp-blog-example/) compiled and deployed to github pages
+
+### How to deploy to Github pages 
+
+#### build
+`harp _harp ./`
+
+#### move files to the gh-pages branch
+`git add . && git stash && git checkout gh-pages && git rm -rf . && git stash pop && git checkout main .gitignore`
+
+#### push to github
+`git add -A && git commit -m "new build" && git push`
