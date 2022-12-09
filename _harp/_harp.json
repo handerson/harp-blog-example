@@ -1,8 +1,0 @@
-{
-    "globals": {
-      "title": "Example Blog",
-      "description": "An example blog",
-      "root": "/harp-blog-example/",
-      "url": "https://handerson.github.io/harp-blog-example/"
-    }
-  }
