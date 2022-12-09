@@ -1,4 +1,4 @@
-<h1>Example Blog</h1>
+<h2>Recent Posts</h2>
 
 <% var count = 0; %>
 <% var limit = 3; %>
@@ -16,13 +16,13 @@
 
 <% var posts = Object.keys(public.posts._data);%>
 
-<div id="pagination"> 
-	<span class="disabled_pagination">Prev</span>
+<nav id="pagination"> 
+	<a role="button" class="outline">Prev</a>
 	
 	<% if(count >= posts.length){ %>
-	<span class="disabled_pagination">Next</span>
+	<a role="button" class="outline">Next</a>
 	<% } else { %>
-	<a href="<%-root%>posts/<%=posts[count]%>">Next</a>
+	<a href="<%-root%>posts/<%=posts[count]%>" role="button">Next</a>
 	<% } %>
-</div>
+  </nav>
 <hr>

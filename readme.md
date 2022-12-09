@@ -2,6 +2,7 @@
 
 * This is site is compiled using [harp](http://harpjs.com)
 * [prism](https://prismjs.com/) for syntax highlighting
+* [pico.css](https://picocss.com) for styling.
 * rss feed
 * prev/next post basic pagination
 * index shows 3 newest posts

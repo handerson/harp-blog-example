@@ -2,7 +2,7 @@
     "globals": {
       "title": "Example Blog",
       "description": "An example blog",
-      "root": "/harp-blog-example/",
+      "root": "/",
       "url": "https://handerson.github.io/harp-blog-example/"
     }
   }

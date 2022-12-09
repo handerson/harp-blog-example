@@ -1,1 +1,1 @@
-This is site is compiled using [harp](http://harpjs.com).
+This site is compiled using [harp](http://harpjs.com). [pico.css](https://picocss.com) is used for styling.
