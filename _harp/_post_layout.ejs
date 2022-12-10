@@ -1,15 +1,17 @@
-<hgroup>
-    <h1 title="<%= public.posts._data[path].title %>"><%= public.posts._data[path].title %></h1> 
-    <h2>
-        <time datetime="<%= public.posts._data[path].date %>">
-            <% var date_options = { weekday:"long", year:"numeric", month:"short", day:"numeric", timeZone: "UTC"}; %>
-            <%= new Date(public.posts._data[path].date).toLocaleDateString('en-us', date_options)  %>
-        </time> 
-    </h2>
-</hgroup>
-
-<main>
-    <%- yield %>
-</main>
-
-<%- partial("_partials/pagination", {"path": path}) %>
+<section class="container">
+    <hgroup>
+        <h1 title="<%= public.posts._data[path].title %>"><%= public.posts._data[path].title %></h1> 
+        <h2>
+            <time datetime="<%= public.posts._data[path].date %>">
+                <% var date_options = { weekday:"long", year:"numeric", month:"short", day:"numeric", timeZone: "UTC"}; %>
+                <%= new Date(public.posts._data[path].date).toLocaleDateString('en-us', date_options)  %>
+            </time> 
+        </h2>
+    </hgroup>
+    
+    <main>
+        <%- yield %>
+    </main>
+    
+    <%- partial("_partials/pagination", {"path": path}) %>
+</sectoin>

@@ -9,8 +9,8 @@
   <%- partial("/posts/" + slug) %>
   <% count++ %>
   </article>
-  <hr>
   <% if(count >= limit){ break; }; %>
+  <hr>
 <% }; %>
 
 
@@ -25,4 +25,3 @@
 	<a href="<%-root%>posts/<%=posts[count]%>" role="button">Next</a>
 	<% } %>
   </nav>
-<hr>

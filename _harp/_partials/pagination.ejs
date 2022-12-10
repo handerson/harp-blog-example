@@ -5,14 +5,14 @@
 
     <% if(posts[0] != path) { %>
         <% currentIndex = posts.indexOf(path); %>
-        <a href="<%-root%>posts/<%=posts[currentIndex-1]%>" role="button" >Prev</a>
+        <a href="<%-root%>posts/<%=posts[currentIndex-1]%>" role="button" >Newer</a>
     <% } else { %>
-        <a role="button" class="outline">Prev</a>
+        <a role="button" class="outline">Newer</a>
     <% } %>
 
     <% if(posts[posts.length-1] != path){ %>
-        <a href="<%-root%>posts/<%=posts[currentIndex+1]%>" role="button">Next</a>
+        <a href="<%-root%>posts/<%=posts[currentIndex+1]%>" role="button">Older</a>
     <% } else { %>
-        <a role="button" class="outline">Next</a>
+        <a role="button" class="outline">Older</a>
     <% } %>
 </nav>
